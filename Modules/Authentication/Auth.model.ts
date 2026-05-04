@@ -1,6 +1,6 @@
 // Modules/Authentication/Auth.model.ts
 import mongoose, { Document, Model, Schema } from "mongoose";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import crypto from "crypto";
 
 export const emailValidator = (email: string): boolean => {
